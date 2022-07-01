@@ -1,0 +1,14 @@
+**Data Details**
+menuApi.js is having data of all cards in one variable Named as  -  "Menu";
+
+****For generating Cards***
+Menu varible is used by Restaurant.js
+Restaurant.js passes this Menu to MenuCard.js using usestate hook as menuData variable
+MenuCard.js is looping through all the values in menuData through map method as follows :
+menuData.map((currelem)=>{
+	const {id, name, Category, image, description} = currelem;
+
+	now all these values will be used in the return statement for each data.
+	inorder to access the data will be using {name of field will be used},
+	Eg : {name}, {description}
+})
